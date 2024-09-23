@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Of Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6">
+    <div class="w-full flex flex-right h-15">
+        <div class=" w-full text-right">
+            <a href="1.html" class="mr-10 w-16 h-10 text-sm text-blue-700 hover:text-blue-500">Home</a>
+            <a href="addbook.html" class="mr-10 text-blue-700 hover:text-blue-500 w-16 text-sm">Add Book</a>
+            <a href="view.html" class="mr-10 text-blue-700 hover:text-blue-500 w-16 text-sm">View Book</a>
+            <a href="login.html" class="mr-10 text-blue-700 hover:text-blue-500 w-16 text-sm">Login</a>
+            <a href="signup.html" class="mr-10 text-blue-700 hover:text-blue-500 w-16 text-sm">Signup</a>
+        </div>
+    </div>
+    <div class="grid grid-cols-2">
+        <div>
+            <img src="Images/pngwing.com.png" class="w-68 h-54 ml-6 mt-40">
+        </div>
+        <div class="bg-purple-200 h-5/6 pt-2 rounded-lg shadow-xl bg-purple-200 mb-24 mt-8 ml-24">
+            <div class=" text-center mt-4 text-2xl font-bold">
+                <h3>Add Book</h3>
+            </div>
+            <div class="ml-24 mt-8 mr-24">
+                <form>
+                    <h4>Book Number</h4>
+                    <input type="text" placeholder="Enter the Book Number" required
+                        class="w-80 h-8 text-sm pl-2 rounded-lg shadow-md">
+                    <div class="pt-4">
+                        <h4>Title</h4>
+                        <input type="text" placeholder="Enter the Book title"
+                            class="w-80 h-8 text-sm pl-2 rounded-lg shadow-md">
+                    </div>
+                    <div class="pt-4">
+                        <h4>Author</h4>
+                        <input type="text" placeholder="Author's name"
+                            class="w-80 h-8 text-sm pl-2 rounded-lg shadow-md">
+                    </div>
+                    <div class="pt-4">
+                        <h4>Book addition mode</h4>
+                        <select name="course" class="w-80 h-8 rounded-lg shadow-md text-sm">
+                            <option value="Course 1" selected>General</option>
+                            <option value="Course 2">By barcode</option>
+                        </select>
+                    </div>
+                    <div class="pt-4">
+                        <h4>No. of copies</h4>
+                        <input type="text" class="w-80 h-8 text-sm pl-2 rounded-lg shadow-md">
+                    </div>
+                    <div class="pt-4">
+                        <input type="button" value="Add book"
+                            class="pt-2 bg-fuchsia-600 w-80 pb-2 rounded-lg shadow-md mb-6 text-sm focus:ring-1 hover:bg-fuchsia-800">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
